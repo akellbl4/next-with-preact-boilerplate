@@ -1,0 +1,41 @@
+.root {
+	margin: 0 auto;
+	min-width: 320px;
+	max-width: 1280px;
+	padding: 20px;
+}
+
+.root main {
+	height: 1000px;
+}
+
+.header {
+	position: sticky;
+	top: 20px;
+	z-index: 100;
+	margin-bottom: 20px;
+	padding: 10px;
+	background: rgba(0, 0, 0, 0.05);
+	backdrop-filter: blur(2px);
+	border-radius: 6px;
+}
+
+.navLink {
+	display: inline-block;
+	padding: 5px;
+	margin-right: 10px;
+
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.navLinkActive {
+	color: #444;
+	pointer-event: none;
+	cursor: default;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
